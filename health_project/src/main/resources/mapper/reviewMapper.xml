@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.health.mapper.ReviewMapper">
+
+	<!-- 리뷰작성후 DB에 올림 -->
+	<insert id="insertReveiwWrite" >
+		 <![CDATA[
+		     insert into review values(
+		     #{tname},#{subject},#{score},#{sname},#{rating},#{bid}
+		   	 )
+		 ]]>
+	</insert>
+	
+	<!-- 리뷰리스트 전체 불러오기 -->
+	<select id="selectReviewListAll" resultType="com.health.dto.ReviewDTO">
+		 	select * from review
+	</select>
+	
+	<!-- 리뷰리스트 강사이름으로 불러오기 -->
+	<select id="selectReviewListSearch" resultType="com.health.dto.ReviewDTO">
+		 	<![CDATA[
+		 	select * from review where bid=#{bid}
+		 	]]>
+	</select>
+
+
+</mapper>	 

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;    
+    list-style: none;
+    
+}
+body{
+    width: 100vw;    
+    height:150vh;
+    overflow: scroll;
+}
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.full{
+    position: absolute;
+    width: 100%;
+    padding: 180px 0 0 40px;
+    transition: all .5s;
+}
+
+.container{
+    width: 80vw;
+    padding:0 70px;
+    margin: 0 auto;
+}
+.intro_ment{
+    font-size: 40px;
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+.innerBox{
+    width: 750px;
+    margin: 0 auto;
+}
+.label{
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+}
+input[type="text"],input[type='password'] {
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.idBox{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+#userId{
+    width: 650px;
+}
+#idCheckBtn{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-radius: 13px;
+    border:none;
+    background-color: #DA1A32;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+#userId,#userName,#userPw2,#userEmail{
+    margin-bottom: 60px;
+}
+#userPw{
+    margin-bottom: 15px;
+}
+
+
+.emailBox{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#userEmail {
+    width: 270px;
+    border-bottom:1px solid #ddd;
+}
+.emailBox > p{
+    width: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+/* 750 300 450 */
+#userEmail2{
+    width: 450px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border:1px solid #ddd
+}
+#submitBtn{
+    width: 100%;
+    height: 90px;
+    background-color: #DA1A32;
+    color:#fff;
+    border-radius: 16px;
+    border:none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s
+}
+#submitBtn:hover{
+    font-size: 27px;
+}
